@@ -1,6 +1,6 @@
 export enum ClientProxyProvide {
     mail = 'MAIL_SERVICE',
-    user = 'USER_SERVICE'
+    user = 'USER_SERVICE',
 }
 
 export enum MessagePatternCmd {
@@ -11,5 +11,7 @@ export enum MessagePatternCmd {
     login = 'login',
     logout = 'logout',
     refreshToken = 'refresh-token',
-    findUserByVlientId = 'find-user-by-clientId'
+    findUserByVlientId = 'find-user-by-clientId',
+    confEmail = 'confirmation-email',
+    resetPasswordEmail = 'reset-password-email',
 }
