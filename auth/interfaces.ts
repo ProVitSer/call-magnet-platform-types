@@ -14,7 +14,10 @@ export interface ResetPasswordResponse extends BaseResponse {
 export interface TokensResponse {
     accessToken: string;
     refreshToken: string;
-    accessTokenExpires: number;
+}
+
+export interface RefreshTokensResponse {
+    accessToken: string;
 }
 
 export interface LogoutResponse {
