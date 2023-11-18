@@ -1,3 +1,6 @@
+import { Menu } from '../user/interfaces';
+import { Role } from '../user/types';
+
 export interface BaseResponse {
     message: string;
 }
@@ -11,12 +14,17 @@ export interface ResetPasswordResponse extends BaseResponse {
     email: string;
 }
 
-export interface TokensResponse {
+export interface LoginResponse {
     accessToken: string;
     refreshToken: string;
 }
 
 export interface RefreshTokensResponse {
+    userRoles: Role[];
+    menu: Menu[];
+}
+
+export interface RefreshTokenResponse {
     accessToken: string;
 }
 
