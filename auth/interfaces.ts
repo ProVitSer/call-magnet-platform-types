@@ -17,9 +17,6 @@ export interface ResetPasswordResponse extends BaseResponse {
 export interface LoginResponse {
     accessToken: string;
     refreshToken: string;
-}
-
-export interface RefreshTokensResponse {
     userRoles: Role[];
     menu: Menu[];
 }
