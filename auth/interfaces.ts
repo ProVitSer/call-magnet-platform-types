@@ -33,8 +33,9 @@ export interface RegisterUser {
     firstname: string;
     lastname: string;
     email: string;
-    phoneNumber: string;
+    phoneNumber: number;
     password: string;
+    company: string;
 }
 
 export interface VerifyUser {
