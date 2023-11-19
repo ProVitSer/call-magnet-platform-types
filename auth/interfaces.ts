@@ -33,7 +33,7 @@ export interface RegisterUser {
     firstname: string;
     lastname: string;
     email: string;
-    phoneNumber: number;
+    phoneNumber: string;
     password: string;
     company: string;
 }
