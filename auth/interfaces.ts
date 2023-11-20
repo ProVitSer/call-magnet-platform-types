@@ -41,11 +41,7 @@ export interface VerifyUser {
 }
 
 export interface ResetPassword {
-    email: string;
-}
-
-export interface UpdatePassword {
-    token: string;
+    verificationCode: string;
     password: string;
 }
 
