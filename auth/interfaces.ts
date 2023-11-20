@@ -58,3 +58,11 @@ export interface RefreshToken {
 export interface VerificationCodeResponse {
     isValid: boolean;
 }
+
+export interface VerificationCode {
+    code: string;
+}
+
+export interface ForgotPasswordData {
+    email: string;
+}
