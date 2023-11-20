@@ -7,6 +7,7 @@ export enum MessagePatternCmd {
     register = 'register',
     verifyUser = 'verify-user',
     resetPassword = 'reset-password',
+    forgotPassword = 'forgot-password',
     updatePassword = 'update-password',
     login = 'login',
     logout = 'logout',

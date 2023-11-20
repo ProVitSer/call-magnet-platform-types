@@ -10,9 +10,7 @@ export interface RegisterUserResponse extends BaseResponse {
     email: string;
 }
 
-export interface ResetPasswordResponse extends BaseResponse {
-    email: string;
-}
+export type ForgotPasswordResponse = BaseResponse;
 
 export interface LoginResponse {
     accessToken: string;
