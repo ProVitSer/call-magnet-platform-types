@@ -14,4 +14,5 @@ export enum MessagePatternCmd {
     findUserByClientId = 'find-user-by-clientId',
     confEmail = 'confirmation-email',
     resetPasswordEmail = 'reset-password-email',
+    verifyCode = 'verify-code',
 }

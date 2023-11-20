@@ -60,3 +60,7 @@ export interface RefreshToken {
     clientId: string;
     refreshToken: string;
 }
+
+export interface VerificationCodeResponse {
+    isValid: boolean;
+}
