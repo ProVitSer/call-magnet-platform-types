@@ -36,6 +36,7 @@ export interface GetClientInfoResponse {
     lastname: string;
     email: string;
     phoneNumber: string;
+    company: string;
     status: Status;
     roles: Role[];
 }
