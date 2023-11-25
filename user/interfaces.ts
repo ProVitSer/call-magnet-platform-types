@@ -30,3 +30,12 @@ export interface Menu {
 export interface Group {
     lines: Menu[];
 }
+
+export interface GetClientInfoResponse {
+    firstname: string;
+    lastname: string;
+    email: string;
+    phoneNumber: string;
+    status: Status;
+    roles: Role[];
+}
