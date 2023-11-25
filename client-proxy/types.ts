@@ -17,4 +17,5 @@ export enum MessagePatternCmd {
     resetPasswordEmail = 'reset-password-email',
     verifyCode = 'verify-code',
     getClientInfo = 'get-clien-info',
+    updateClientInfo = 'update-client-info',
 }

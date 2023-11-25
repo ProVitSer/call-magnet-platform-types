@@ -40,3 +40,16 @@ export interface GetClientInfoResponse {
     status: Status;
     roles: Role[];
 }
+
+export interface UpdateClientInfoData {
+    clientId: string;
+    firstname?: string;
+    lastname?: string;
+    phoneNumber?: string;
+    company?: string;
+}
+
+export interface UpdateClientInfoResponse {
+    result: boolean;
+    message: string;
+}
