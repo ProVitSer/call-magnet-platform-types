@@ -2,6 +2,10 @@ import { Role, Status } from './types';
 
 export type FindUserByClientIdResponse = Pick<UserSchema, 'refreshToken' | 'validationToken' | 'isEmailVerified'>;
 
+export interface BaseRequestData {
+    clientId: string;
+}
+
 export interface UserSchema {
     _id: string;
     firstname: string;
@@ -41,8 +45,7 @@ export interface GetClientInfoResponse {
     roles: Role[];
 }
 
-export interface UpdateClientInfoData {
-    clientId: string;
+export interface UpdateClientInfoData extends BaseRequestData {
     firstname?: string;
     lastname?: string;
     phoneNumber?: string;
@@ -51,5 +54,14 @@ export interface UpdateClientInfoData {
 
 export interface UpdateClientInfoResponse {
     result: boolean;
+    message: string;
+}
+
+export interface ChangePasswordData extends BaseRequestData {
+    oldPassword: string;
+    newPassword: string;
+}
+
+export interface ChangePasswordResponse {
     message: string;
 }
