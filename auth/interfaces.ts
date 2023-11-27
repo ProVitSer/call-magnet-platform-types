@@ -15,6 +15,9 @@ export type ForgotPasswordResponse = BaseResponse;
 export interface LoginResponse {
     accessToken: string;
     refreshToken: string;
+    firstname: string;
+    lastname: string;
+    company: string;
     userRoles: Role[];
     menu: Menu[];
 }
