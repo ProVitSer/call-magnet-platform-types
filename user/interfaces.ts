@@ -22,6 +22,7 @@ export interface UserSchema {
 }
 
 export interface Menu {
+    code: number;
     name: string;
     path: string;
     icon: string;
