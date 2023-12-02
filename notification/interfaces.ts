@@ -4,7 +4,8 @@ export interface Notification {
     clientId: string;
     type: NotificationType;
     avatarType: AvatarType;
-    avatar: string;
+    icon?: string;
+    img?: string;
     title: string;
     smalText: string;
     html: string;
@@ -24,18 +25,25 @@ export interface AddNotificationData {
     clientId: string;
     type?: NotificationType;
     avatarType?: AvatarType;
-    avatar?: string;
+    icon?: string;
+    img?: string;
     title: string;
     smalText: string;
     html: string;
     link?: string;
     author?: NotificationAuthor;
 }
+export interface GetClientNotificationsData {
+    clientId: string;
+    limit: string;
+}
 
-export interface GetClientNotificationReponse {
+export interface GetClientNotificationsReponse {
+    id: string;
     type: NotificationType;
     avatarType: AvatarType;
-    avatar: string;
+    icon?: string;
+    img?: string;
     title: string;
     smalText: string;
     html: string;
@@ -43,4 +51,9 @@ export interface GetClientNotificationReponse {
     isRead: boolean;
     author: NotificationAuthor;
     createdAt: string;
+}
+
+export interface MarkNotificationsIsReadData {
+    clientId: string;
+    ids: string[];
 }
