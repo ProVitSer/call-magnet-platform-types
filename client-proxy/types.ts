@@ -19,4 +19,5 @@ export enum MessagePatternCmd {
     getClientInfo = 'get-clien-info',
     updateClientInfo = 'update-client-info',
     changePassword = 'change-password',
+    getClientNotifications = 'get-clien-notifications',
 }
