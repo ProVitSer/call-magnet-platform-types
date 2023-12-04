@@ -5,6 +5,7 @@ export enum Role {
     autoDial = 'auto-dial',
     sms = 'sms',
     telegram = 'telegram',
+    kpi = 'kpi',
 }
 
 export enum Status {
